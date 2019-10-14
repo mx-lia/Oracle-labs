@@ -3,6 +3,9 @@
 select sum(value) from v$sga;
 
 --2.	Определите текущие размеры основных пулов SGA.
+
+show parameter sga_target;
+
 --3.	Определите размеры гранулы для каждого пула.
 
 select  component,
@@ -65,7 +68,4 @@ select * from v$session;
 
 select sid, server from v$session;
 
---13.	*Найдите самые часто используемые объекты в базе данных.
-
-select * from dba_object_usage;
 
