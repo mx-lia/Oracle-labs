@@ -85,6 +85,8 @@ create table T1
 
 insert into T1(N1, N2, N3, N4) values (S1.nextval, S2.nextval, S3.nextval, S4.nextval);
 
+select * from T1;
+
 --9.	Создайте кластер ABC, имеющий hash-тип (размер 200) и содержащий 2 поля: X (NUMBER (10)), V (VARCHAR2(12)).
 
 create cluster ABC
